@@ -135,7 +135,9 @@
 
         document.getElementById('declineBtn').addEventListener('click', () => {
             clearTimeout(redirectTimer);
-            window.location.href = 'https://2431e3xqe45z5m1pl2zjnz15f7.hop.clickbank.net';
+            // Você pode adicionar um redirecionamento diferente ou apenas ocultar o pop-up
+            document.getElementById('popup').style.display = 'none';
+            document.querySelector('.overlay').style.display = 'none';
         });
 
         // Mostrar o pop-up quando a página carregar
